@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Breaking Barriers: Mr. Shakhzod Uralov — 3x IELTS Band 8.0 &amp; Reading 9.0 Lab</title>
+  <meta name="description" content="Interactive Breaking Bad themed birthday tribute SPA for Mr. Shakhzod Uralov (Everest Samarqand) — 3x IELTS Overall Band 8.0 &amp; Reading 9.0 Master. November 12 Special Edition.">
+  <meta property="og:title" content="Breaking Barriers: Mr. Shakhzod Uralov — Birthday Lab Edition">
+  <meta property="og:description" content="Celebrating Mr. Shakhzod Uralov (3x IELTS 8.0, Reading 9.0, Everest Samarqand) on November 12. Next Target: Overall Band 9.0!">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#060b11" id="meta-theme-color">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1512' stroke='%234aff83' stroke-width='4'/%3E%3Ctext x='8' y='20' fill='%234aff83' font-family='monospace' font-size='12' font-weight='bold'%3E35%3C/text%3E%3Ctext x='14' y='50' fill='%23e6f4ea' font-family='sans-serif' font-size='30' font-weight='900'%3EBr%3C/text%3E%3C/svg%3E">
+
+  <!-- Prevent theme flash on initial load -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('bb_lab_theme');
+        if (savedTheme === 'light' || savedTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+          var meta = document.getElementById('meta-theme-color');
+          if (meta) meta.setAttribute('content', savedTheme === 'light' ? '#f8fafc' : '#060b11');
+        }
+        var savedLang = localStorage.getItem('bb_lab_lang');
+        if (savedLang === 'uz' || savedLang === 'en') {
+          document.documentElement.setAttribute('lang', savedLang);
+        }
+      } catch (e) {
+        /* Safe fallback if storage is blocked */
+      }
+    })();
+  </script>
+
+  <!-- Google Fonts with system fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800;900&family=Rajdhani:wght@600;700&family=Share+Tech+Mono&display=swap&subset=latin,latin-ext" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- Full-screen Fireworks & Particle FX Canvas -->
+  <canvas id="fx-canvas" aria-hidden="true"></canvas>
+
+  <!-- Classified Intro Envelope Overlay -->
+  <div id="intro-overlay" class="intro-overlay" role="dialog" aria-modal="true" aria-labelledby="intro-headline">
+    <div class="intro-overlay__backdrop"></div>
+
+    <!-- Ambient floating periodic tiles (like Lab Dossier Edition) -->
+    <div class="intro-ambient-tiles" aria-hidden="true">
+      <span class="intro-float-tile t1">35 Br</span>
+      <span class="intro-float-tile t2">56 Ba</span>
+      <span class="intro-float-tile t3">3x 8.0</span>
+      <span class="intro-float-tile t4">99.1%</span>
+      <span class="intro-float-tile t5">🎂 23</span>
+    </div>
+
+    <div class="intro-overlay__container">
+      <!-- Overlay Top HUD Row -->
+      <div class="intro-topbar">
+        <div class="intro-hud-tag" data-i18n="intro_hud">⚗️ TOP SECRET // ALBUQUERQUE × EVEREST SAMARQAND LAB</div>
+        <div class="intro-quick-controls">
+          <button type="button" id="intro-theme-btn" class="hud-btn hud-btn--pill" aria-label="Toggle Dark or Light theme" data-i18n-attr="aria-label:theme_toggle_aria">
+            <span id="intro-theme-icon" aria-hidden="true">🌙</span>
+            <span id="intro-theme-label" class="intro-theme-label" data-i18n="intro_theme_dark">Dark Lab</span>
+          </button>
+          <button type="button" id="intro-lang-btn" class="hud-btn hud-btn--lang" aria-label="Switch language">
+            <span id="intro-lang-en" class="hud-btn__lang-opt active">EN</span>
+            <span class="hud-btn__sep">|</span>
+            <span id="intro-lang-uz" class="hud-btn__lang-opt">UZ</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bold Dossier Title & 23rd Birthday Badge -->
+      <div class="intro-heading-block">
+        <h2 id="intro-headline" class="intro-headline" data-i18n="intro_headline">
+          CONFIDENTIAL BIRTHDAY DOSSIER FOR MR. SHAKHZOD URALOV
+        </h2>
+        <div class="intro-age-pill" data-i18n="intro_age_pill">🎂 BORN 2003 · HAPPY 23RD BIRTHDAY · 12 NOVEMBER</div>
+      </div>
+
+      <div id="intro-envelope" class="intro-envelope" role="button" tabindex="0" aria-label="Open Classified Laboratory Invitation" data-i18n-attr="aria-label:intro_open_aria">
+        <div class="intro-envelope__flap"></div>
+        <div class="intro-envelope__preview" aria-hidden="true">
+          <span class="intro-envelope__preview-line">TO: MR. SHAKHZOD URALOV</span>
+          <span class="intro-envelope__preview-line">EVEREST SAMARQAND · 3x BAND 8.0 · R 9.0</span>
+          <span class="intro-envelope__preview-line">HAPPY 23RD BIRTHDAY EDITION</span>
+        </div>
+        <div class="intro-envelope__pocket"></div>
+
+        <!-- Glowing Round Br·Ba Wax Seal Button -->
+        <div id="intro-seal" class="intro-seal">
+          <span class="intro-seal__main">Br·Ba</span>
+          <span class="intro-seal__label" data-i18n="intro_seal_text">OPEN LAB</span>
+        </div>
+
+        <!-- Secret Letter Inside (Revealed on Click) -->
+        <div id="intro-letter" class="intro-letter" aria-live="polite">
+          <div class="intro-letter__header">
+            <span class="intro-letter__stamp">99.1% PURE IELTS LAB · AGE 23</span>
+            <span class="intro-letter__date">12.11 // SAMARQAND</span>
+          </div>
+          <h3 id="intro-title" class="intro-letter__recipient" data-i18n="intro_recipient">TO: MR. SHAKHZOD URALOV</h3>
+          <p class="intro-letter__body" data-i18n="intro_body">
+            Happy 23rd Birthday &amp; Welcome to the Breaking Barriers Laboratory! Your 3x IELTS Band 8.0 and Reading 9.0 formula has inspired hundreds of champions at Everest Samarqand. Today we celebrate your wisdom, discipline, and the unstoppable road to Overall Band 9.0!
+          </p>
+          <div class="intro-letter__actions">
+            <button type="button" id="intro-enter-btn" class="btn btn--neon btn--lg">
+              <span>🧪</span>
+              <span data-i18n="intro_enter_btn">Enter the Laboratory</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" id="intro-open-cta-btn" class="btn intro-cta-pill">
+        <span>✨</span>
+        <span data-i18n="intro_open_cta">OPEN SECRET LETTER &amp; START CELEBRATION</span>
+      </button>
+
+      <p id="intro-hint" class="intro-hint" data-i18n="intro_hint">Tap the Br·Ba seal or button above to break the lock &amp; start the soundtrack</p>
+      <button type="button" id="intro-skip-btn" class="intro-skip" data-i18n="intro_skip">Skip Intro →</button>
+    </div>
+  </div>
+
+  <!-- Sticky HUD Top Navigation Bar -->
+  <header id="site-header" class="lab-navbar" inert>
+    <div class="lab-navbar__inner">
+      <a href="#hero" class="lab-navbar__brand" aria-label="Breaking Barriers Home">
+        <div class="lab-navbar__logo-wrap">
+          <img id="navbar-logo-img" class="lab-navbar__logo-img" alt="Breaking Bad Logo" width="44" height="32" decoding="async">
+          <div class="lab-navbar__logo-fallback" aria-hidden="true">
+            <span class="el el--xs"><sup>35</sup>Br</span><span class="el el--xs"><sup>56</sup>Ba</span>
+          </div>
+        </div>
+        <div class="lab-navbar__brand-text">
+          <span class="lab-navbar__brand-title">URALOV LAB</span>
+          <span class="lab-navbar__brand-sub">3x 8.0 · R 9.0</span>
+        </div>
+      </a>
+
+      <nav class="lab-navbar__nav" aria-label="Primary Navigation">
+        <a href="#hero" class="lab-navbar__link active" data-route="hero" aria-current="page">
+          <span class="lab-navbar__num">01</span>
+          <span data-i18n="nav_hero">Heisenberg Lab</span>
+        </a>
+        <a href="#evidence" class="lab-navbar__link" data-route="evidence">
+          <span class="lab-navbar__num">02</span>
+          <span data-i18n="nav_evidence">Evidence 8.0</span>
+        </a>
+        <a href="#characters" class="lab-navbar__link" data-route="characters">
+          <span class="lab-navbar__num">03</span>
+          <span data-i18n="nav_characters">14 Legends</span>
+        </a>
+        <a href="#cakes" class="lab-navbar__link" data-route="cakes">
+          <span class="lab-navbar__num">04</span>
+          <span data-i18n="nav_cakes">Candles &amp; Cakes</span>
+        </a>
+        <a href="#azizjon" class="lab-navbar__link" data-route="azizjon">
+          <span class="lab-navbar__num">05</span>
+          <span data-i18n="nav_azizjon">Band 9.0 Core</span>
+        </a>
+      </nav>
+
+      <div class="lab-navbar__controls">
+        <div class="respect-pill" title="Total Lab Respect" data-i18n-attr="title:respect_total_title">
+          <span aria-hidden="true">🔥</span>
+          <span id="global-respect-count" class="respect-pill__count">0</span>
+        </div>
+
+        <button type="button" id="lang-toggle-btn" class="hud-btn hud-btn--lang" aria-label="Switch language">
+          <span id="lang-opt-en" class="hud-btn__lang-opt active">EN</span>
+          <span class="hud-btn__sep">|</span>
+          <span id="lang-opt-uz" class="hud-btn__lang-opt">UZ</span>
+        </button>
+
+        <button type="button" id="theme-toggle-btn" class="hud-btn" aria-label="Toggle Dark or Light theme" data-i18n-attr="aria-label:theme_toggle_aria">
+          <span id="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <button type="button" id="music-toggle-btn" class="hud-btn hud-btn--music" aria-label="Pause or play background music" data-i18n-attr="aria-label:music_toggle_aria|title:music_toggle_aria">
+          <span id="music-icon" aria-hidden="true">🎵</span>
+          <span id="music-state-text" class="hud-btn__music-state" aria-hidden="true">⏸</span>
+        </button>
+
+        <button type="button" id="audio-toggle-btn" class="hud-btn" aria-label="Toggle sound effects" data-i18n-attr="aria-label:audio_toggle_aria">
+          <span id="audio-icon" aria-hidden="true">🔊</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main SPA Content Container -->
+  <main id="app-main" class="spa-main" inert>
+
+    <!-- ==========================================
+         PAGE 1: #hero — HEISENBERG LAB
+         ========================================== -->
+    <section id="hero" class="spa-page active" aria-labelledby="hero-page-title">
+      <div class="page-container">
+
+        <!-- Hero Top Split Grid -->
+        <div class="hero-grid">
+          <!-- A) Left Column -->
+          <div class="hero-col-left card-surface tilt-card">
+            <div class="hero-chips">
+              <span class="lab-chip lab-chip--neon" data-i18n="hero_chip_1">🧪 3x BAND 8.0 &amp; 99.1% PURE FORMULA</span>
+              <span class="lab-chip lab-chip--crystal" data-i18n="hero_chip_2">💎 EVEREST SAMARQAND</span>
+              <span class="lab-chip lab-chip--gold" data-i18n="hero_chip_3">🎂 NOV 12 · HAPPY 23RD BIRTHDAY (2003)</span>
+            </div>
+
+            <h1 id="hero-page-title" class="hero-title" tabindex="-1">
+              <!-- Populated dynamically via renderTitle(segments) -->
+              <span class="el"><sup>35</sup>Br</span>eaking <span class="el"><sup>56</sup>Ba</span>rriers: <span class="el"><sup>99</sup>Sh</span>akhzod <span class="el"><sup>90</sup>Ur</span>alov
+            </h1>
+
+            <div class="hero-typewriter-box" aria-live="polite">
+              <span class="hero-typewriter__prompt">&gt;_</span>
+              <span id="hero-typewriter-text" class="hero-typewriter__text">"I AM THE ONE WHO TEACHES 3x BAND 8.0!"</span>
+              <span class="hero-typewriter__cursor" aria-hidden="true">|</span>
+            </div>
+
+            <p class="hero-lead" data-i18n="hero_lead">
+              Happy Birthday to the master chemist of English &amp; IELTS at Everest Samarqand! Turning relentless hard work into pure Band 8.0 and Reading 9.0 excellence.
+            </p>
+
+            <!-- 4 Metric Cards -->
+            <div class="hero-metrics">
+              <div class="metric-card">
+                <span class="metric-card__label" data-i18n="metric_reading_label">Reading Score</span>
+                <strong class="metric-card__value" data-count-target="9.0" data-count-suffix=" / 9.0">9.0 / 9.0</strong>
+                <span class="metric-card__sub" data-i18n="metric_reading_sub">Maximum Perfection</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-card__label" data-i18n="metric_listening_label">Listening Score</span>
+                <strong class="metric-card__value" data-count-target="8.5" data-count-suffix=" / 9.0">8.5 / 9.0</strong>
+                <span class="metric-card__sub" data-i18n="metric_listening_sub">Crystal Precision</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-card__label" data-i18n="metric_master_label">3x Master</span>
+                <strong class="metric-card__value" data-count-prefix="3x " data-count-target="8.0">3x 8.0</strong>
+                <span class="metric-card__sub" data-i18n="metric_master_sub">Proven Track Record</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-card__label" data-i18n="metric_empire_label">Everest Empire</span>
+                <strong class="metric-card__value" data-count-target="99.1" data-count-suffix="%">99.1%</strong>
+                <span class="metric-card__sub" data-i18n="metric_empire_sub">Pure Knowledge</span>
+              </div>
+            </div>
+
+            <div class="hero-cta-row">
+              <button type="button" id="hero-salute-btn" class="btn btn--neon">
+                <span>🎆</span>
+                <span data-i18n="hero_salute_btn">Launch Birthday Salute</span>
+              </button>
+              <a href="#characters" class="btn btn--outline">
+                <span>🎩</span>
+                <span data-i18n="hero_go_chars_btn">14 Character Wishes →</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- B) Right Column — Auto Slideshow (3 Images) -->
+          <div class="hero-col-right card-surface">
+            <div class="slideshow" id="hero-slideshow" aria-roledescription="carousel" aria-label="Mr. Shakhzod Uralov Highlights">
+              <div class="slideshow__header">
+                <span class="slideshow__badge" data-i18n="slideshow_badge">📸 LIVE LAB FEED // 03 ARCHIVES</span>
+                <span id="slideshow-counter" class="slideshow__counter">1 / 3</span>
+              </div>
+
+              <div class="slideshow__viewport" id="slideshow-viewport">
+                <!-- Slides rendered/wired by Hero module in app.js -->
+              </div>
+
+              <div class="slideshow__caption-bar">
+                <p id="slideshow-caption" class="slideshow__caption">Mr. Shakhzod Uralov — 3x Band 8.0 &amp; Reading 9.0 Master</p>
+              </div>
+
+              <div class="slideshow__controls">
+                <button type="button" id="slide-prev-btn" class="hud-btn" aria-label="Previous slide" data-i18n-attr="aria-label:slide_prev_aria">◀</button>
+                <div class="slideshow__dots" id="slideshow-dots" role="tablist" aria-label="Slide Dots">
+                  <button type="button" class="slideshow__dot active" data-slide="0" aria-label="Slide 1" aria-selected="true"></button>
+                  <button type="button" class="slideshow__dot" data-slide="1" aria-label="Slide 2" aria-selected="false"></button>
+                  <button type="button" class="slideshow__dot" data-slide="2" aria-label="Slide 3" aria-selected="false"></button>
+                </div>
+                <button type="button" id="slide-next-btn" class="hud-btn" aria-label="Next slide" data-i18n-attr="aria-label:slide_next_aria">▶</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- C) Teacher's 3 Golden Rules (Motivation Block + Video Player) -->
+        <div class="section-block">
+          <div class="section-header">
+            <span class="section-eyebrow" data-i18n="rules_eyebrow">THE URALOV CODEX // THREE GOLDEN LAWS OF IELTS</span>
+            <h2 id="rules-section-title" class="section-title">
+              <!-- Populated by renderTitle -->
+            </h2>
+            <p class="section-desc" data-i18n="rules_desc">
+              Every high-scoring Everest student knows these 3 iconic golden rules by heart. Test each laboratory protocol below or attach a video clip!
+            </p>
+          </div>
+
+          <div class="rules-grid">
+            <!-- Rule 1: JUST DO IT -->
+            <article class="rule-card card-surface tilt-card" data-rule="1">
+              <div class="rule-card__top">
+                <span class="el"><sup>01</sup>Jd</span>
+                <div class="rule-card__titles">
+                  <span class="rule-card__tag" data-i18n="rule1_tag">PROTOCOL #01 // IGNITION</span>
+                  <h3 class="rule-card__title" data-i18n="rule1_title">"JUST DO IT!"</h3>
+                </div>
+              </div>
+
+              <blockquote class="rule-card__quote" data-i18n="rule1_quote">
+                "Don't look for excuses, don't hesitate — JUST DO IT!"
+              </blockquote>
+
+              <div class="rule-interactive">
+                <div class="energy-meter" aria-hidden="true">
+                  <div id="rule1-bar" class="energy-meter__fill" style="width: 15%"></div>
+                </div>
+                <p id="rule1-status" class="rule-interactive__status" data-i18n="rule1_status_idle">Discipline Reactor: Standby (15%)</p>
+                <button type="button" id="rule1-action-btn" class="btn btn--neon btn--full">
+                  <span data-i18n="rule1_btn">⚡ Ignite Power</span>
+                </button>
+              </div>
+
+              <div class="rule-video-bar">
+                <button type="button" class="btn btn--sm btn--outline js-watch-rule-video" data-rule-id="1">
+                  <span data-i18n="video_watch_btn">🎬 Watch Video</span>
+                </button>
+                <button type="button" class="btn btn--sm btn--ghost js-attach-rule-video" data-rule-id="1">
+                  <span data-i18n="video_attach_btn">📂 Attach .mp4</span>
+                </button>
+                <input type="file" accept="video/mp4,video/*" class="sr-only js-rule-file-input" data-rule-id="1" aria-label="Attach MP4 video for Rule 1">
+              </div>
+            </article>
+
+            <!-- Rule 2: NO SECRET INGREDIENT -->
+            <article class="rule-card card-surface tilt-card" data-rule="2">
+              <div class="rule-card__top">
+                <span class="el"><sup>02</sup>Ns</span>
+                <div class="rule-card__titles">
+                  <span class="rule-card__tag" data-i18n="rule2_tag">PROTOCOL #02 // PURE TRUTH</span>
+                  <h3 class="rule-card__title" data-i18n="rule2_title">"NO SECRET INGREDIENT!"</h3>
+                </div>
+              </div>
+
+              <blockquote class="rule-card__quote" data-i18n="rule2_quote">
+                "There is no secret ingredient at all — you simply have to sit down and study!"
+              </blockquote>
+
+              <div class="rule-interactive">
+                <div id="rule2-scroll" class="secret-scroll" aria-live="polite">
+                  <div class="secret-scroll__inner">
+                    <span class="secret-scroll__badge" data-i18n="rule2_scroll_badge">📜 GOLDEN FORMULA REVEALED:</span>
+                    <strong class="secret-scroll__formula" data-i18n="rule2_formula">0% Magic + 100% Sitting Down &amp; Studying = 3x Band 8.0 &amp; Band 9.0!</strong>
+                  </div>
+                </div>
+                <button type="button" id="rule2-action-btn" class="btn btn--gold btn--full">
+                  <span data-i18n="rule2_btn">📜 Unroll Secret Scroll</span>
+                </button>
+              </div>
+
+              <div class="rule-video-bar">
+                <button type="button" class="btn btn--sm btn--outline js-watch-rule-video" data-rule-id="2">
+                  <span data-i18n="video_watch_btn">🎬 Watch Video</span>
+                </button>
+                <button type="button" class="btn btn--sm btn--ghost js-attach-rule-video" data-rule-id="2">
+                  <span data-i18n="video_attach_btn">📂 Attach .mp4</span>
+                </button>
+                <input type="file" accept="video/mp4,video/*" class="sr-only js-rule-file-input" data-rule-id="2" aria-label="Attach MP4 video for Rule 2">
+              </div>
+            </article>
+
+            <!-- Rule 3: KEEP GRINDING... THEN BOOM! -->
+            <article class="rule-card card-surface tilt-card" data-rule="3">
+              <div class="rule-card__top">
+                <span class="el"><sup>03</sup>Bm</span>
+                <div class="rule-card__titles">
+                  <span class="rule-card__tag" data-i18n="rule3_tag">PROTOCOL #03 // CRITICAL MASS</span>
+                  <h3 class="rule-card__title" data-i18n="rule3_title">"WORK, WORK... THEN SUDDENLY — BOOM!"</h3>
+                </div>
+              </div>
+
+              <blockquote class="rule-card__quote" data-i18n="rule3_quote">
+                "You study, study, study — no result. Study, study — no result. Then suddenly — BOOM! — you see the breakthrough!"
+              </blockquote>
+
+              <div class="rule-interactive">
+                <div class="boom-meter-head">
+                  <span data-i18n="rule3_pressure_label">Breakthrough Pressure:</span>
+                  <strong id="boom-percent-label" class="boom-percent">0%</strong>
+                </div>
+                <div class="energy-meter energy-meter--boom" aria-hidden="true">
+                  <div id="boom-progress-bar" class="energy-meter__fill" data-step="0" style="width: 0%"></div>
+                </div>
+                <p id="boom-status-msg" class="rule-interactive__status boom-status" aria-live="polite" data-i18n="rule3_status_0">
+                  Press "Grind &amp; Build Pressure" 5 times to reach critical mass!
+                </p>
+                <div class="boom-actions">
+                  <button type="button" id="boom-trigger-btn" class="btn btn--crystal btn--full">
+                    <span data-i18n="rule3_btn">💥 Study Hard (Build Pressure)</span>
+                  </button>
+                  <button type="button" id="boom-reset-btn" class="btn btn--sm btn--outline btn--full boom-reset-btn" hidden>
+                    <span data-i18n="rule3_reset_btn">🔄 Reset Simulator</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="rule-video-bar">
+                <button type="button" class="btn btn--sm btn--outline js-watch-rule-video" data-rule-id="3">
+                  <span data-i18n="video_watch_btn">🎬 Watch Video</span>
+                </button>
+                <button type="button" class="btn btn--sm btn--ghost js-attach-rule-video" data-rule-id="3">
+                  <span data-i18n="video_attach_btn">📂 Attach .mp4</span>
+                </button>
+                <input type="file" accept="video/mp4,video/*" class="sr-only js-rule-file-input" data-rule-id="3" aria-label="Attach MP4 video for Rule 3">
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- D) Interactive Heisenberg Chemical Synthesizer (#chem-mixer) -->
+        <div id="chem-mixer" class="section-block card-surface mixer-panel">
+          <div class="mixer-panel__header">
+            <div>
+              <span class="section-eyebrow" data-i18n="mixer_eyebrow">HEISENBERG CHEMICAL SYNTHESIZER // INTERACTIVE LAB</span>
+              <h2 id="mixer-section-title" class="section-title">
+                <!-- Populated by renderTitle -->
+              </h2>
+            </div>
+
+            <!-- Live Telemetry Panel -->
+            <div class="telemetry-bar" aria-label="Live Lab Telemetry">
+              <div class="telemetry-chip">
+                <span class="telemetry-chip__label">🌡️ TEMP:</span>
+                <strong id="telemetry-temp" class="telemetry-chip__val">198.4°C</strong>
+              </div>
+              <div class="telemetry-chip">
+                <span class="telemetry-chip__label">⚙️ PRESSURE:</span>
+                <strong id="telemetry-pressure" class="telemetry-chip__val">99.1 PSI</strong>
+              </div>
+              <div class="telemetry-chip telemetry-chip--target">
+                <span class="telemetry-chip__label" data-i18n="telemetry_target_label">🎯 NEXT TARGET:</span>
+                <strong id="telemetry-target" class="telemetry-chip__val">BAND 9.0</strong>
+              </div>
+            </div>
+          </div>
+
+          <p class="mixer-panel__hint" data-i18n="mixer_hint">
+            Click each glass flask below to pump pure IELTS reagents through the glass pipes into the central Band 9.0 Reactor!
+          </p>
+
+          <!-- SVG Flasks + Glass Pipes + Central Reactor -->
+          <div class="mixer-stage">
+            <svg class="mixer-svg" viewBox="0 0 900 320" role="img" aria-label="Interactive Chemical Synthesizer Flasks and Pipes">
+              <defs>
+                <linearGradient id="grad-neon" x1="0" y1="1" x2="0" y2="0">
+                  <stop offset="0%" stop-color="#0a8f3e"/>
+                  <stop offset="100%" stop-color="#4aff83"/>
+                </linearGradient>
+                <linearGradient id="grad-crystal" x1="0" y1="1" x2="0" y2="0">
+                  <stop offset="0%" stop-color="#005c7a"/>
+                  <stop offset="100%" stop-color="#00d2ff"/>
+                </linearGradient>
+                <linearGradient id="grad-gold" x1="0" y1="1" x2="0" y2="0">
+                  <stop offset="0%" stop-color="#b37700"/>
+                  <stop offset="100%" stop-color="#f5c518"/>
+                </linearGradient>
+                <clipPath id="clip-flask-1">
+                  <path d="M105,70 L135,70 L135,115 L175,215 Q182,235 162,235 L78,235 Q58,235 65,215 L105,115 Z"/>
+                </clipPath>
+                <clipPath id="clip-flask-2">
+                  <path d="M335,70 L365,70 L365,115 L405,215 Q412,235 392,235 L308,235 Q288,235 295,215 L335,115 Z"/>
+                </clipPath>
+                <clipPath id="clip-flask-3">
+                  <path d="M565,70 L595,70 L595,115 L635,215 Q642,235 622,235 L538,235 Q518,235 525,215 L565,115 Z"/>
+                </clipPath>
+                <clipPath id="clip-reactor">
+                  <circle cx="790" cy="165" r="68"/>
+                </clipPath>
+              </defs>
+
+              <!-- Glass Connecting Pipes Background -->
+              <path class="mixer-pipe-bg" d="M120,70 L120,32 L790,32 L790,95" fill="none" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+              <path class="mixer-pipe-bg" d="M350,70 L350,32" fill="none" stroke-width="12" stroke-linecap="round"/>
+              <path class="mixer-pipe-bg" d="M580,70 L580,32" fill="none" stroke-width="12" stroke-linecap="round"/>
+
+              <!-- Animated Liquid Flow Pipes -->
+              <path id="pipe-flow-1" class="mixer-pipe-flow mixer-pipe-flow--1" d="M120,70 L120,32 L790,32 L790,95" fill="none" stroke="url(#grad-neon)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path id="pipe-flow-2" class="mixer-pipe-flow mixer-pipe-flow--2" d="M350,70 L350,32 L790,32 L790,95" fill="none" stroke="url(#grad-crystal)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path id="pipe-flow-3" class="mixer-pipe-flow mixer-pipe-flow--3" d="M580,70 L580,32 L790,32 L790,95" fill="none" stroke="url(#grad-gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+              <!-- FLASK 1: Reading 9.0 -->
+              <g class="mixer-flask-group" id="flask-group-1" data-flask="1" role="button" tabindex="0" aria-label="Flask 1: Reading 9.0">
+                <g clip-path="url(#clip-flask-1)">
+                  <rect id="flask-liq-1" class="flask-liquid" x="50" y="195" width="140" height="50" fill="url(#grad-neon)"/>
+                  <circle class="flask-bubble b1" cx="105" cy="220" r="4" fill="#ffffff" opacity="0.6"/>
+                  <circle class="flask-bubble b2" cx="135" cy="210" r="3" fill="#ffffff" opacity="0.5"/>
+                </g>
+                <path class="flask-outline" d="M105,70 L135,70 L135,115 L175,215 Q182,235 162,235 L78,235 Q58,235 65,215 L105,115 Z" fill="none" stroke-width="3.5"/>
+                <rect x="98" y="62" width="44" height="10" rx="4" class="flask-rim"/>
+                <text x="120" y="200" text-anchor="middle" class="flask-score">9.0</text>
+                <text x="120" y="268" text-anchor="middle" class="flask-title">READING 9.0</text>
+              </g>
+
+              <!-- FLASK 2: Listening 8.5 -->
+              <g class="mixer-flask-group" id="flask-group-2" data-flask="2" role="button" tabindex="0" aria-label="Flask 2: Listening 8.5">
+                <g clip-path="url(#clip-flask-2)">
+                  <rect id="flask-liq-2" class="flask-liquid" x="280" y="195" width="140" height="50" fill="url(#grad-crystal)"/>
+                  <circle class="flask-bubble b1" cx="335" cy="220" r="4" fill="#ffffff" opacity="0.6"/>
+                  <circle class="flask-bubble b2" cx="365" cy="212" r="3.5" fill="#ffffff" opacity="0.5"/>
+                </g>
+                <path class="flask-outline" d="M335,70 L365,70 L365,115 L405,215 Q412,235 392,235 L308,235 Q288,235 295,215 L335,115 Z" fill="none" stroke-width="3.5"/>
+                <rect x="328" y="62" width="44" height="10" rx="4" class="flask-rim"/>
+                <text x="350" y="200" text-anchor="middle" class="flask-score">8.5</text>
+                <text x="350" y="268" text-anchor="middle" class="flask-title">LISTENING 8.5</text>
+              </g>
+
+              <!-- FLASK 3: 3x Band 8.0 -->
+              <g class="mixer-flask-group" id="flask-group-3" data-flask="3" role="button" tabindex="0" aria-label="Flask 3: 3x Band 8.0">
+                <g clip-path="url(#clip-flask-3)">
+                  <rect id="flask-liq-3" class="flask-liquid" x="510" y="195" width="140" height="50" fill="url(#grad-gold)"/>
+                  <circle class="flask-bubble b1" cx="565" cy="220" r="4" fill="#ffffff" opacity="0.6"/>
+                  <circle class="flask-bubble b2" cx="595" cy="210" r="3" fill="#ffffff" opacity="0.5"/>
+                </g>
+                <path class="flask-outline" d="M565,70 L595,70 L595,115 L635,215 Q642,235 622,235 L538,235 Q518,235 525,215 L565,115 Z" fill="none" stroke-width="3.5"/>
+                <rect x="558" y="62" width="44" height="10" rx="4" class="flask-rim"/>
+                <text x="580" y="200" text-anchor="middle" class="flask-score">3x 8.0</text>
+                <text x="580" y="268" text-anchor="middle" class="flask-title">3x BAND 8.0</text>
+              </g>
+
+              <!-- CENTRAL REACTOR: NEXT TARGET BAND 9.0 -->
+              <g id="reactor-core-group" class="reactor-group">
+                <g clip-path="url(#clip-reactor)">
+                  <rect id="reactor-liq" class="flask-liquid" x="715" y="215" width="150" height="30" fill="url(#grad-neon)"/>
+                </g>
+                <circle class="reactor-ring" cx="790" cy="165" r="70" fill="none" stroke-width="4"/>
+                <circle class="reactor-ring-inner" cx="790" cy="165" r="58" fill="none" stroke-dasharray="8 6" stroke-width="2"/>
+                <text x="790" y="158" text-anchor="middle" class="reactor-label">TARGET</text>
+                <text x="790" y="184" text-anchor="middle" class="reactor-score">9.0</text>
+                <text x="790" y="268" text-anchor="middle" class="flask-title">REACTOR CORE</text>
+              </g>
+            </svg>
+          </div>
+
+          <div class="mixer-controls">
+            <div class="mixer-buttons">
+              <button type="button" class="btn btn--sm btn--outline js-flask-btn" data-flask="1">
+                <span>🧪</span> <span data-i18n="mixer_btn_1">Reading 9.0 Flask</span>
+              </button>
+              <button type="button" class="btn btn--sm btn--outline js-flask-btn" data-flask="2">
+                <span>💧</span> <span data-i18n="mixer_btn_2">Listening 8.5 Flask</span>
+              </button>
+              <button type="button" class="btn btn--sm btn--outline js-flask-btn" data-flask="3">
+                <span>⚗️</span> <span data-i18n="mixer_btn_3">3x Band 8.0 Flask</span>
+              </button>
+              <button type="button" id="mixer-all-btn" class="btn btn--sm btn--neon">
+                <span>⚡</span> <span data-i18n="mixer_btn_all">Synthesize All (Band 9.0)</span>
+              </button>
+            </div>
+            <p id="mixer-status-text" class="mixer-status" aria-live="polite" data-i18n="mixer_status_idle">
+              Reagents active: 0 / 3 — Click flasks to start synthesis.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom Pager (Page 1) -->
+        <nav class="page-pager" aria-label="Page Navigation">
+          <button type="button" class="btn btn--outline pager-prev" disabled>
+            <span data-i18n="pager_prev">← Previous Page</span>
+          </button>
+          <div class="page-pager__nums">
+            <a href="#hero" class="pager-num active" aria-current="page">1</a>
+            <a href="#evidence" class="pager-num">2</a>
+            <a href="#characters" class="pager-num">3</a>
+            <a href="#cakes" class="pager-num">4</a>
+            <a href="#azizjon" class="pager-num">5</a>
+          </div>
+          <a href="#evidence" class="btn btn--neon pager-next">
+            <span data-i18n="pager_next">Next Page →</span>
+          </a>
+        </nav>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PAGE 2: #evidence — LASER-SCANNED CERTIFICATES
+         ========================================== -->
+    <section id="evidence" class="spa-page" aria-labelledby="evidence-page-title">
+      <div class="page-container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-i18n="evidence_eyebrow">VERIFIED LAB RECORDS // LASER AUTHENTICATION ACTIVE</span>
+          <h1 id="evidence-page-title" class="section-title" tabindex="-1">
+            <!-- Populated by renderTitle -->
+          </h1>
+          <p class="section-desc" data-i18n="evidence_desc">
+            Inspect the laser-scanned IELTS 8.0 credentials and the Albuquerque × Everest Samarqand laboratory archive. Click any document or scene to inspect in full-screen Lightbox.
+          </p>
+        </div>
+
+        <!-- A) Laser-Scanned Certificates Grid -->
+        <div class="evidence-grid" id="evidence-certs-grid">
+          <!-- Populated dynamically in app.js using ASSETS.ielts1 & ASSETS.ielts2 -->
+        </div>
+
+        <!-- B) Albuquerque × Everest Scene Archive -->
+        <div class="section-block">
+          <div class="section-header section-header--flex">
+            <div>
+              <span class="section-eyebrow" data-i18n="archive_eyebrow">ALBUQUERQUE × EVEREST SAMARQAND // VISUAL VAULT</span>
+              <h2 id="archive-section-title" class="section-title">
+                <!-- Populated by renderTitle -->
+              </h2>
+            </div>
+            <div class="archive-upload-actions">
+              <button type="button" id="add-classroom-photo-btn" class="btn btn--sm btn--neon">
+                <span>📷</span>
+                <span data-i18n="add_class_photo_btn">+ Attach Classroom Photo</span>
+              </button>
+              <input type="file" id="add-classroom-photo-input" accept="image/*" multiple class="sr-only" aria-label="Attach classroom photos">
+            </div>
+          </div>
+
+          <div class="archive-grid" id="archive-scenes-grid">
+            <!-- Populated dynamically in app.js with breaking_bad1.jpg, car_scene.jpg, walter_white1.jpg, breaking_font.jpg + ustoz.jpg / custom classroom photos -->
+          </div>
+        </div>
+
+        <!-- Bottom Pager (Page 2) -->
+        <nav class="page-pager" aria-label="Page Navigation">
+          <a href="#hero" class="btn btn--outline pager-prev">
+            <span data-i18n="pager_prev">← Previous Page</span>
+          </a>
+          <div class="page-pager__nums">
+            <a href="#hero" class="pager-num">1</a>
+            <a href="#evidence" class="pager-num active" aria-current="page">2</a>
+            <a href="#characters" class="pager-num">3</a>
+            <a href="#cakes" class="pager-num">4</a>
+            <a href="#azizjon" class="pager-num">5</a>
+          </div>
+          <a href="#characters" class="btn btn--neon pager-next">
+            <span data-i18n="pager_next">Next Page →</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PAGE 3: #characters — 14 CHARACTERS + TIO HECTOR
+         ========================================== -->
+    <section id="characters" class="spa-page" aria-labelledby="characters-page-title">
+      <div class="page-container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-i18n="chars_eyebrow">BREAKING BAD UNIVERSE // VIP BIRTHDAY DELEGATION</span>
+          <h1 id="characters-page-title" class="section-title" tabindex="-1">
+            <!-- Populated by renderTitle -->
+          </h1>
+          <p class="section-desc" data-i18n="chars_desc">
+            14 iconic legends from Albuquerque have gathered to salute Mr. Shakhzod Uralov's 3x Band 8.0 mastery, echo his 3 Golden Rules, and wish him Overall Band 9.0!
+          </p>
+        </div>
+
+        <!-- Top Wide Actors Banner -->
+        <div id="characters-banner-box" class="chars-banner card-surface">
+          <!-- Populated in app.js using ASSETS.breaking_bad_actors -->
+        </div>
+
+        <!-- 14 Character Cards Grid -->
+        <div id="characters-grid" class="chars-grid">
+          <!-- Rendered via JS from CHARACTERS array -->
+        </div>
+
+        <!-- Tio Hector Salamanca's Golden Bell Block -->
+        <div id="tio-bell-section" class="section-block card-surface tio-panel">
+          <div class="tio-panel__grid">
+            <div class="tio-panel__media" id="tio-media-box">
+              <!-- Populated in app.js with Tio_Salamanca.jpg + lospollos.jpg -->
+            </div>
+
+            <div class="tio-panel__content">
+              <span class="section-eyebrow" data-i18n="tio_eyebrow">LA FAMILIA ES TODO // GOLDEN BELL TELEGRAPH</span>
+              <h2 class="tio-panel__title" data-i18n="tio_title">🛎️ Tio Hector Salamanca's Golden Bell</h2>
+              <p class="tio-panel__desc" data-i18n="tio_desc">
+                Ring Tio Hector's golden bell! Every "DING!" illuminates the next periodic tile in the birthday message: "HAPPY BIRTHDAY USTOZ SHAHZOD 9.0!"
+              </p>
+
+              <div class="tio-bell-controls">
+                <button type="button" id="tio-ding-btn" class="tio-ding-btn" aria-label="Ring Tio Hector's Golden Bell">
+                  <span class="tio-ding-btn__ring" aria-hidden="true"></span>
+                  <span class="tio-ding-btn__icon" id="tio-bell-icon" aria-hidden="true">🛎️</span>
+                  <span class="tio-ding-btn__text">DING!</span>
+                </button>
+
+                <div class="tio-progress-info">
+                  <span id="tio-progress-label" class="tio-progress-label">0 / 29</span>
+                  <button type="button" id="tio-reset-btn" class="btn btn--sm btn--ghost" data-i18n="tio_reset_btn">🔄 Reset Bell</button>
+                </div>
+              </div>
+
+              <!-- Periodic Letter Grid for "HAPPY BIRTHDAY USTOZ SHAHZOD 9.0!" -->
+              <div id="tio-letters-grid" class="tio-letters-grid" aria-live="polite">
+                <!-- Populated by Characters module -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Pager (Page 3) -->
+        <nav class="page-pager" aria-label="Page Navigation">
+          <a href="#evidence" class="btn btn--outline pager-prev">
+            <span data-i18n="pager_prev">← Previous Page</span>
+          </a>
+          <div class="page-pager__nums">
+            <a href="#hero" class="pager-num">1</a>
+            <a href="#evidence" class="pager-num">2</a>
+            <a href="#characters" class="pager-num active" aria-current="page">3</a>
+            <a href="#cakes" class="pager-num">4</a>
+            <a href="#azizjon" class="pager-num">5</a>
+          </div>
+          <a href="#cakes" class="btn btn--neon pager-next">
+            <span data-i18n="pager_next">Next Page →</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PAGE 4: #cakes — CANDLE WISH & 3 CAKES
+         ========================================== -->
+    <section id="cakes" class="spa-page" aria-labelledby="cakes-page-title">
+      <div class="page-container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-i18n="cakes_eyebrow">NOVEMBER 12 CEREMONY // MAKE A BAND 9.0 WISH</span>
+          <h1 id="cakes-page-title" class="section-title" tabindex="-1">
+            <!-- Strictly built via segment array in app.js:
+                 EN: [20 Ca]ndle Wish & [35 Br]eaking Bad Cakes
+                 UZ: [56 Sh]amlar Tilagi va [35 Br]eaking Bad Tortlari -->
+          </h1>
+          <p class="section-desc" data-i18n="cakes_desc">
+            Blow into your microphone or press the "Puf!" button to blow out the 5 laboratory candles, play the Happy Birthday melody, and unlock the Everest students' custom cakes!
+          </p>
+        </div>
+
+        <!-- Interactive 2-Tier Cake & Wind Meter Ceremony -->
+        <div class="ceremony-panel card-surface">
+          <div class="ceremony-grid">
+            <!-- Visual 2-Tier Cake with 5 Burning Lab Candles -->
+            <div class="cake-stage">
+              <div id="wish-celebration-banner" class="wish-banner" hidden aria-live="polite">
+                <span data-i18n="cakes_wish_accepted">🎉 Wish Accepted! Onward to Overall Band 9.0!</span>
+              </div>
+
+              <div class="lab-cake" id="interactive-lab-cake" aria-label="Two-tier birthday cake with 5 burning laboratory candles">
+                <!-- 5 Realistic Lab Candles -->
+                <div class="lab-candles" id="lab-candles-row">
+                  <div class="lab-candle" data-candle="0">
+                    <div class="lab-flame"><span class="lab-flame__core"></span><span class="lab-flame__inner"></span></div>
+                    <div class="lab-smoke"></div>
+                    <div class="lab-smoke lab-smoke--2"></div>
+                    <div class="lab-candle__wick"><span class="lab-candle__ember"></span></div>
+                    <div class="lab-candle__body"><span class="lab-candle__mark">R9</span></div>
+                  </div>
+                  <div class="lab-candle" data-candle="1">
+                    <div class="lab-flame"><span class="lab-flame__core"></span><span class="lab-flame__inner"></span></div>
+                    <div class="lab-smoke"></div>
+                    <div class="lab-smoke lab-smoke--2"></div>
+                    <div class="lab-candle__wick"><span class="lab-candle__ember"></span></div>
+                    <div class="lab-candle__body"><span class="lab-candle__mark">L8.5</span></div>
+                  </div>
+                  <div class="lab-candle" data-candle="2">
+                    <div class="lab-flame"><span class="lab-flame__core"></span><span class="lab-flame__inner"></span></div>
+                    <div class="lab-smoke"></div>
+                    <div class="lab-smoke lab-smoke--2"></div>
+                    <div class="lab-candle__wick"><span class="lab-candle__ember"></span></div>
+                    <div class="lab-candle__body"><span class="lab-candle__mark">23</span></div>
+                  </div>
+                  <div class="lab-candle" data-candle="3">
+                    <div class="lab-flame"><span class="lab-flame__core"></span><span class="lab-flame__inner"></span></div>
+                    <div class="lab-smoke"></div>
+                    <div class="lab-smoke lab-smoke--2"></div>
+                    <div class="lab-candle__wick"><span class="lab-candle__ember"></span></div>
+                    <div class="lab-candle__body"><span class="lab-candle__mark">3x8</span></div>
+                  </div>
+                  <div class="lab-candle" data-candle="4">
+                    <div class="lab-flame"><span class="lab-flame__core"></span><span class="lab-flame__inner"></span></div>
+                    <div class="lab-smoke"></div>
+                    <div class="lab-smoke lab-smoke--2"></div>
+                    <div class="lab-candle__wick"><span class="lab-candle__ember"></span></div>
+                    <div class="lab-candle__body"><span class="lab-candle__mark">9.0</span></div>
+                  </div>
+                </div>
+
+                <!-- Realistic Top Tier with Frosting Drips -->
+                <div class="lab-cake__tier lab-cake__tier--top">
+                  <div class="lab-cake__icing">
+                    <span class="cake-drip d1"></span><span class="cake-drip d2"></span><span class="cake-drip d3"></span><span class="cake-drip d4"></span><span class="cake-drip d5"></span>
+                  </div>
+                  <div class="lab-cake__crystals" aria-hidden="true">
+                    <span>💎</span><span>🎂 23</span><span>💎</span>
+                  </div>
+                  <div class="lab-cake__badge">3x BAND 8.0 · R 9.0</div>
+                </div>
+
+                <!-- Realistic Bottom Tier with Frosting Drips -->
+                <div class="lab-cake__tier lab-cake__tier--bottom">
+                  <div class="lab-cake__icing">
+                    <span class="cake-drip d1"></span><span class="cake-drip d2"></span><span class="cake-drip d3"></span><span class="cake-drip d4"></span><span class="cake-drip d5"></span><span class="cake-drip d6"></span>
+                  </div>
+                  <div class="lab-cake__tiles">
+                    <span class="el el--xs"><sup>35</sup>Br</span>
+                    <span class="el el--xs"><sup>56</sup>Ba</span>
+                    <span class="lab-cake__name">SHAKHZOD URALOV · 23</span>
+                  </div>
+                </div>
+
+                <!-- Porcelain Cake Stand & Rim -->
+                <div class="lab-cake__plate"></div>
+                <div class="lab-cake__pedestal"></div>
+              </div>
+            </div>
+
+            <!-- Wind Meter & Controls -->
+            <div class="wind-controls">
+              <h2 class="wind-controls__title" data-i18n="wind_panel_title">💨 Live Wind &amp; Candle Telemetry</h2>
+              <p class="wind-controls__note" data-i18n="wind_https_note">
+                Note: Microphone access requires HTTPS or localhost. On file:// or without a mic, use the instant "💨 Puf!" button below!
+              </p>
+
+              <div class="wind-meter-box">
+                <div class="wind-meter-head">
+                  <span data-i18n="wind_power_label">💨 Blow Power:</span>
+                  <strong id="wind-power-val">0%</strong>
+                </div>
+                <div class="energy-meter" aria-hidden="true">
+                  <div id="wind-power-bar" class="energy-meter__fill energy-meter__fill--crystal" style="width: 0%"></div>
+                </div>
+                <p id="wind-status-text" class="wind-status" aria-live="polite" data-i18n="wind_status_ready">
+                  5 / 5 Candles Burning — Make a wish and blow!
+                </p>
+              </div>
+
+              <div class="wind-btn-group">
+                <button type="button" id="mic-start-btn" class="btn btn--crystal">
+                  <span data-i18n="mic_enable_btn">🎤 Enable Microphone</span>
+                </button>
+                <button type="button" id="manual-blow-btn" class="btn btn--neon">
+                  <span data-i18n="manual_blow_btn">💨 Puf! (Blow Candles)</span>
+                </button>
+                <button type="button" id="relight-candles-btn" class="btn btn--outline" hidden>
+                  <span data-i18n="relight_btn">🔥 Relight Candles</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Special Cakes from Everest Students -->
+        <div class="section-block">
+          <div class="section-header">
+            <span class="section-eyebrow" data-i18n="student_cakes_eyebrow">SWEET GRATITUDE // EVEREST SAMARQAND STUDENTS</span>
+            <h2 id="student-cakes-title" class="section-title" data-i18n="student_cakes_title">
+              🎂 3 Custom Breaking Bad Cakes from Students
+            </h2>
+          </div>
+
+          <div id="cakes-cards-grid" class="cakes-grid">
+            <!-- Rendered via JS using Breaking bad themed cake_.jpg, cake.jpg, cake1.jpg -->
+          </div>
+        </div>
+
+        <!-- Bottom Pager (Page 4) -->
+        <nav class="page-pager" aria-label="Page Navigation">
+          <a href="#characters" class="btn btn--outline pager-prev">
+            <span data-i18n="pager_prev">← Previous Page</span>
+          </a>
+          <div class="page-pager__nums">
+            <a href="#hero" class="pager-num">1</a>
+            <a href="#evidence" class="pager-num">2</a>
+            <a href="#characters" class="pager-num">3</a>
+            <a href="#cakes" class="pager-num active" aria-current="page">4</a>
+            <a href="#azizjon" class="pager-num">5</a>
+          </div>
+          <a href="#azizjon" class="btn btn--neon pager-next">
+            <span data-i18n="pager_next">Next Page →</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PAGE 5: #azizjon — @AZIZJONDEV BAND 9.0 TRIBUTE
+         ========================================== -->
+    <section id="azizjon" class="spa-page" aria-labelledby="azizjon-page-title">
+      <div class="page-container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-i18n="aziz_eyebrow">DEVELOPER TRIBUTE &amp; BAND 9.0 SIMULATION // @AZIZJONDEV</span>
+          <h1 id="azizjon-page-title" class="section-title" tabindex="-1">
+            <!-- Populated by renderTitle -->
+          </h1>
+        </div>
+
+        <div class="aziz-grid">
+          <!-- Left Column: Sincere 150-220 Word Tribute (Strictly NO student photos here) -->
+          <article class="aziz-letter card-surface tilt-card">
+            <div class="aziz-letter__head">
+              <div class="aziz-letter__badge">
+                <button type="button" id="channel-logo-btn" class="channel-logo-slot" title="Click to set @azizjondev channel logo" data-i18n-attr="title:channel_logo_title">
+                  <img id="channel-logo-img" class="channel-logo-img" src="assets/images/channel_logo.png" alt="@azizjondev logo" width="48" height="48">
+                  <span id="channel-logo-fallback" class="el el--sm"><sup>99</sup>Az</span>
+                  <span class="channel-logo-edit" aria-hidden="true">📷</span>
+                </button>
+                <input type="file" id="channel-logo-input" accept="image/*" class="sr-only" aria-label="Upload @azizjondev channel logo">
+                <div>
+                  <span class="aziz-letter__from" data-i18n="aziz_from_label">PERSONAL DEDICATION FROM @AZIZJONDEV</span>
+                  <h2 class="aziz-letter__title" data-i18n="aziz_letter_title">To Mr. Shakhzod Uralov — Architect of Champions</h2>
+                </div>
+              </div>
+              <span class="lab-chip lab-chip--gold">12 NOV // BAND 9.0</span>
+            </div>
+
+            <div class="aziz-letter__body">
+              <p data-i18n="aziz_p1">
+                Dear Mr. Shakhzod Uralov, happy birthday! Watching your work at Everest Samarqand is like witnessing pure chemistry in action. Achieving an official IELTS Overall Band 8.0 three separate times—crowned by a flawless Reading 9.0 and Listening 8.5—is not luck; it is the result of relentless discipline, crystal-clear methodology, and genuine care for every learner who walks into your classroom.
+              </p>
+              <p data-i18n="aziz_p2">
+                Thank you for giving us three timeless life lessons that reach far beyond exams. Whenever hesitation creeps in, your voice echoes: "Don't look for excuses — JUST DO IT!" Whenever someone searches for shortcuts, you remind us: "There is no secret ingredient — you simply have to sit down and study!" And when progress feels invisible, you keep us going: "You work, work, work — no result... and then suddenly — BOOM! — you see the breakthrough!"
+              </p>
+              <p data-i18n="aziz_p3">
+                On this special November 12 celebration, may your health, family happiness, and energy shine brighter than ever. Our entire community looks forward to celebrating your next historic milestone: conquering the official Overall IELTS Band 9.0 (Listening 9.0, Reading 9.0, Writing 9.0, Speaking 9.0)! Happy Birthday, Teacher!
+              </p>
+            </div>
+
+            <div class="aziz-letter__footer">
+              <div class="aziz-signature">
+                <span data-i18n="aziz_sig_respect">With deepest respect &amp; gratitude,</span>
+                <strong>@azizjondev</strong>
+              </div>
+
+              <a href="https://t.me/azizjondev" target="_blank" rel="noopener noreferrer" class="btn btn--crystal">
+                <span>✈️</span>
+                <span data-i18n="aziz_tg_btn">Connect on Telegram (@azizjondev)</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Right Column: Fortune Reactor + Crystal Mini-Game + Live Code Terminal -->
+          <div class="aziz-interactive-col">
+
+            <!-- 1. Interactive Heisenberg Birthday & Band 9.0 Fortune Reactor -->
+            <div class="card-surface aziz-widget reactor-widget">
+              <div class="reactor-widget__head">
+                <div>
+                  <h3 class="aziz-widget__title" data-i18n="stickers_title">⚗️ Band 9.0 Birthday Fortune Reactor</h3>
+                  <p class="aziz-widget__sub" data-i18n="stickers_sub">Tap a lab capsule to trigger a reaction &amp; reveal a special message:</p>
+                </div>
+                <span class="reactor-purity-pill" id="reactor-streak-pill">⚗️ 99.1%</span>
+              </div>
+
+              <div id="stickers-grid" class="stickers-grid">
+                <!-- Populated by Azizjon module -->
+              </div>
+
+              <div id="sticker-tip-box" class="sticker-tip-box" aria-live="polite" data-i18n="sticker_default_tip">
+                🧪 Choose any reaction capsule above to brew a Birthday Fortune for Mr. Shakhzod Uralov!
+              </div>
+            </div>
+
+            <!-- 2. Mini-Game: Collect Band 9.0 Crystals -->
+            <div class="card-surface aziz-widget">
+              <div class="crystal-game-head">
+                <div>
+                  <h3 class="aziz-widget__title" data-i18n="game_title">🎯 MINI-GAME: COLLECT BAND 9.0 CRYSTALS</h3>
+                  <p class="aziz-widget__sub" data-i18n="game_sub">Tap all 5 floating crystals to unlock the Band 9.0 Prediction Certificate!</p>
+                </div>
+                <div class="crystal-counter">
+                  <span id="crystal-score-text">0 / 5</span>
+                </div>
+              </div>
+
+              <div id="crystal-arena" class="crystal-arena" aria-label="Floating Band 9.0 Crystals Arena">
+                <!-- 5 floating crystal buttons rendered by Azizjon module -->
+              </div>
+
+              <!-- Mini-Rule Box triggered on each Crystal click -->
+              <div id="crystal-rule-box" class="crystal-rule-box" aria-live="polite" data-i18n="crystal_default_rule">
+                💎 Tap any Band 9.0 crystal above to collect it and reveal Mr. Shakhzod Uralov's golden rule for that module!
+              </div>
+
+              <!-- Unlocked Official Band 9.0 Prediction Certificate -->
+              <div id="prediction-certificate" class="prediction-cert" hidden aria-live="polite">
+                <div class="prediction-cert__ribbon" data-i18n="cert_pred_disclaimer">
+                  ✨ JOYFUL BIRTHDAY WISH &amp; PREDICTION (NOT AN OFFICIAL TEST DOCUMENT) ✨
+                </div>
+                <h4 class="prediction-cert__heading" data-i18n="cert_pred_title">
+                  🏆 OFFICIAL BAND 9.0 PREDICTION CERTIFICATE
+                </h4>
+                <p class="prediction-cert__holder" data-i18n="cert_pred_holder">
+                  PROUDLY PRESENTED TO: MR. SHAKHZOD URALOV
+                </p>
+                <div class="prediction-cert__scores">
+                  <span>💎 Listening: <strong>9.0</strong></span>
+                  <span>💎 Reading: <strong>9.0</strong></span>
+                  <span>💎 Writing: <strong>9.0</strong></span>
+                  <span>💎 Speaking: <strong>9.0</strong></span>
+                  <span class="prediction-cert__overall">👑 OVERALL: <strong>9.0</strong></span>
+                </div>
+                <p class="prediction-cert__meta" data-i18n="cert_pred_meta">
+                  Date: November 12 · Issued by: Everest Students &amp; @azizjondev
+                </p>
+                <button type="button" id="crystal-replay-btn" class="btn btn--sm btn--neon">
+                  <span data-i18n="game_replay_btn">🔄 Play Again</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 3. Live Code Terminal -->
+            <div class="card-surface aziz-widget terminal-widget">
+              <div class="terminal-bar">
+                <div class="terminal-bar__left">
+                  <div class="terminal-dots" aria-hidden="true">
+                    <span class="tdot tdot--red"></span>
+                    <span class="tdot tdot--yellow"></span>
+                    <span class="tdot tdot--green"></span>
+                  </div>
+                  <span class="terminal-title">uralov_band9_synthesizer.js</span>
+                </div>
+                <div class="terminal-bar__right">
+                  <span id="terminal-status-pill" class="terminal-status-pill">READY</span>
+                  <button type="button" id="terminal-run-btn" class="btn btn--sm btn--neon terminal-run-btn">
+                    <span data-i18n="terminal_run_btn">▶ Run Code</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="terminal-code" id="terminal-code-display" aria-label="Band 9.0 Formula Script"></div>
+              <div class="terminal-output" id="terminal-output-display" aria-live="polite"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Bottom Pager (Page 5) -->
+        <nav class="page-pager" aria-label="Page Navigation">
+          <a href="#cakes" class="btn btn--outline pager-prev">
+            <span data-i18n="pager_prev">← Previous Page</span>
+          </a>
+          <div class="page-pager__nums">
+            <a href="#hero" class="pager-num">1</a>
+            <a href="#evidence" class="pager-num">2</a>
+            <a href="#characters" class="pager-num">3</a>
+            <a href="#cakes" class="pager-num">4</a>
+            <a href="#azizjon" class="pager-num active" aria-current="page">5</a>
+          </div>
+          <button type="button" class="btn btn--neon pager-next" disabled>
+            <span data-i18n="pager_next">Next Page →</span>
+          </button>
+        </nav>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer id="site-footer" class="lab-footer">
+    <div class="lab-footer__inner">
+      <div class="lab-footer__brand">
+        <span class="el el--xs"><sup>35</sup>Br</span>
+        <span class="el el--xs"><sup>56</sup>Ba</span>
+        <span data-i18n="footer_text">Breaking Barriers — Birthday Gift Edition for Mr. Shakhzod Uralov (November 12)</span>
+      </div>
+      <div class="lab-footer__links">
+        <a href="https://t.me/azizjondev" target="_blank" rel="noopener noreferrer" class="lab-footer__link">
+          <img id="footer-channel-logo" class="footer-channel-logo" src="assets/images/channel_logo.png" alt="" width="24" height="24" hidden>
+          <span>@azizjondev</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Images & Certificates -->
+  <div id="lightbox-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" hidden>
+    <div class="modal-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <div class="lightbox-toolbar">
+        <span id="lightbox-counter" class="lightbox-counter">1 / 1</span>
+        <button type="button" id="lightbox-close-btn" class="hud-btn lightbox-close" aria-label="Close Lightbox">✕</button>
+      </div>
+      <div class="lightbox-stage">
+        <button type="button" id="lightbox-prev-btn" class="hud-btn lightbox-nav lightbox-nav--prev" aria-label="Previous Image">◀</button>
+        <div class="lightbox-img-wrap" id="lightbox-img-wrap">
+          <img id="lightbox-img" class="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+        </div>
+        <button type="button" id="lightbox-next-btn" class="hud-btn lightbox-nav lightbox-nav--next" aria-label="Next Image">▶</button>
+      </div>
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- Video Player Modal for the 3 Golden Rules -->
+  <div id="video-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="video-modal-title" hidden>
+    <div class="modal-backdrop" id="video-modal-backdrop"></div>
+    <div class="video-modal-card card-surface">
+      <div class="video-modal-header">
+        <h3 id="video-modal-title" class="video-modal-title">Rule Video</h3>
+        <button type="button" id="video-modal-close" class="hud-btn video-close-btn" aria-label="Close Video">✕</button>
+      </div>
+      <div class="video-modal-body">
+        <div id="video-player-stage" class="video-player-stage">
+          <video id="rule-video-player" class="rule-video-player" controls playsinline></video>
+        </div>
+        <div id="video-missing-box" class="video-missing-box" hidden>
+          <p data-i18n="video_missing_msg">
+            No default video file found in assets/video/ for this rule yet. You can attach any .mp4 file from your device to watch right now!
+          </p>
+          <button type="button" id="video-modal-attach-btn" class="btn btn--neon">
+            <span data-i18n="video_attach_btn">📂 Attach .mp4</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
